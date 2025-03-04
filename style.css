@@ -1,0 +1,150 @@
+ /* Card Hover effect */
+ .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    margin-bottom: 12px;
+}
+
+/* Link style */
+.link-hover {
+    display: block;
+    padding: 12px 18px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    color: #00796b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+}
+
+.link-hover:hover {
+    background-color: #00796b;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Title */
+.section-title {
+    background-color: #1D4ED8;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Container for icon links */
+.icon-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-links i {
+    font-size: 1.5rem;
+    color: #1D4ED8;
+}
+
+/* Ensure the footer sticks to the bottom of the page */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content wrapper */
+main {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    padding: 3rem 0; /* py-12 */
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 1.5rem; /* px-6 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; /* gap-8 */
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.footer-section p {
+    margin-bottom: 1rem; /* mb-4 */
+    color: #d1d5db; /* text-gray-300 */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem; /* space-y-2 */
+}
+
+.footer-section ul li a {
+    color: #d1d5db; /* text-gray-300 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white; /* hover:text-white */
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem; /* space-x-4 */
+}
+
+.social-icons a {
+    color: #9ca3af; /* text-gray-400 */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: white; /* hover:text-white */
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151; /* border-gray-700 */
+    padding-top: 1.5rem; /* pt-6 */
+    text-align: center;
+    margin-top: 2rem; /* mt-8 */
+}
+
+.footer-bottom p {
+    font-size: 0.875rem; /* text-sm */
+    color: #9ca3af; /* text-gray-400 */
+}

@@ -22,6 +22,18 @@
         <a href="#features" class="text-lg text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition duration-300">Features</a>
         <a href="#pricing" class="text-lg text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition duration-300">Pricing</a>
         <a href="#contact" class="text-lg text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition duration-300">Contact</a>
+
+        <a href="login.php" class="px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition duration-300">Login</a>
+        <a href="#" onclick="signOut();">Sign out</a>
+        <script>
+          function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+              console.log('User signed out.');
+            });
+          }
+        </script>
+
         
         <!-- Dark Mode Toggle -->
         <button class="focus:outline-none">
@@ -39,8 +51,8 @@
   </header>
 
   <!-- Hero Section -->
-  <header class="bg-blue-600 text-white py-20">
+  <!-- <header class="bg-blue-600 text-white py-20">
     <div class="container mx-auto text-center">
       <h1 class="text-4xl font-bold mb-4">Welcome to Blocker Team Directory</h1>
     </div>
-  </header>
+  </header> -->

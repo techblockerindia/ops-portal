@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<link href="style.css" rel="stylesheet">
 <body class="bg-gray-50 p-6">
 
     <div class="container mx-auto">
@@ -33,66 +34,6 @@
             
         </div>
     </div>
-
-    <style>
-        /* Card Hover effect */
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Link style */
-        .link-hover {
-            display: block;
-            padding: 12px 18px;
-            background-color: #fafafa;
-            border-radius: 8px;
-            color: #00796b;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            margin-bottom: 12px;
-        }
-
-        .link-hover:hover {
-            background-color: #4accbd;
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Section Title */
-        .section-title {
-            background-color: #1D4ED8;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        /* Container for icon links */
-        .icon-links {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .icon-links a {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .icon-links i {
-            font-size: 1.5rem;
-            color: #222733;
-        }
-
-    </style>
 
 </body>
 <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
