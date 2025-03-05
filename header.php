@@ -34,24 +34,11 @@
             <a href="businessIntelligence.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Business Intelligence</a>
           </div>
         </div>
-
-        <a href="#" class="text-gray-700 hover:text-indigo-600 text-lg">Contact Us</a>
-
-        <!-- Login Button (Initially Visible) -->
-        <a href="login.php" id="login-btn" class="ml-6 px-5 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition duration-300 text-lg">
-          Login
-        </a>
-
-        <!-- User Dropdown (Initially Hidden) -->
-        <div id="user-menu" class="relative hidden">
-          <button id="user-dropdown-btn" class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-300">
-            <span id="user-name">User</span> <i class="fas fa-chevron-down ml-2"></i>
-          </button>
-          <div id="user-dropdown-menu" class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden">
-            <a href="../admin/admin.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Admin</a>
-            <a href="../logout.php" id="logout-btn" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Logout</a>
-          </div>
-        </div>
+        <a href="login.php" class="px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition duration-300">Login</a>
+        <a href="#" onclick="signOut();" class="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-red-600">Sign out</a>
+        <button id="theme-toggle" class="text-gray-400 hover:text-indigo-600 transition duration-300 text-xl">
+          <i class="fa-solid fa-moon"></i>
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -103,35 +90,10 @@
       document.getElementById("desktop-dropdown-menu").classList.toggle("hidden");
     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener("click", function(event) {
-      var dropdown = document.getElementById("desktop-dropdown-menu");
-      var button = document.getElementById("desktop-dropdown-btn");
-      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.classList.add("hidden");
-      }
-    });
-
-    let isLoggedIn = false; 
-    let userName = "NIRMAL";
-
-    if (isLoggedIn) {
-      document.getElementById("login-btn").classList.add("hidden");
-      document.getElementById("user-menu").classList.remove("hidden");
-      document.getElementById("user-name").innerText = userName;
+    // Google Sign Out
+    function signOut() {
+      console.log('User signed out.');
     }
-
-    // User Dropdown Toggle
-    document.getElementById("user-dropdown-btn").addEventListener("click", function(event) {
-      event.stopPropagation();
-      document.getElementById("user-dropdown-menu").classList.toggle("hidden");
-    });
-
-    // Logout Functionality (For Demo)
-    document.getElementById("logout-btn").addEventListener("click", function() {
-      alert("Logging out...");
-      location.reload();
-    });
   </script>
 </body>
 </html>
