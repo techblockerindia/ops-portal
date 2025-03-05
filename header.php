@@ -49,7 +49,7 @@
           </button>
           <div id="user-dropdown-menu" class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden">
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Profile</a>
-            <a href="#" id="logout-btn" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Logout</a>
+            <a href="logout.php" id="logout-btn" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Logout</a>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
 
     // Simulating User Login (Replace with actual authentication)
     let isLoggedIn = true; // Set to false if user is not logged in
-    let userName = "John Doe"; // Replace with actual user data
+    let userName = "NIRMAL"; // Replace with actual user data
 
     if (isLoggedIn) {
       document.getElementById("login-btn").classList.add("hidden");
