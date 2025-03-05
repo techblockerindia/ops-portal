@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-
+<link href="style.css" rel="stylesheet">
 <body class="bg-gray-50 p-6">
 
     <div class="container mx-auto">

@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+
 <link href="style.css" rel="stylesheet">
 <body class="bg-gray-100 p-6">
   <div class="container mx-auto">

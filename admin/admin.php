@@ -1,25 +1,15 @@
-<?php
-// dashboard.php
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+<?php include '..//header.php'; ?>
 <body class="bg-gray-100 font-sans">
     <div class="flex h-screen">
         <!-- Sidebar -->
-        <aside class="w-64 bg-gradient-to-b from-gray-900 to-gray-700 text-white p-5 shadow-lg">
+        <!-- <aside class="w-64 bg-gradient-to-b from-gray-900 to-gray-700 text-white p-5 shadow-lg">
             <h2 class="text-2xl font-bold text-center mb-6">Admin Panel</h2>
             <ul class="space-y-2">
                 <li><a href="#" class="block px-4 py-3 bg-gray-800 hover:bg-gray-600 rounded transition">Dashboard</a></li>
                 <li><a href="#" class="block px-4 py-3 hover:bg-gray-600 rounded transition">Users</a></li>
                 <li><a href="#" class="block px-4 py-3 hover:bg-gray-600 rounded transition">Settings</a></li>
             </ul>
-        </aside>
+        </aside> -->
 
         <!-- Main Content -->
         <main class="flex-1 p-8">
@@ -36,7 +26,7 @@
                     </div>
                     <div class="ml-4">
                         <h3 class="text-lg font-bold">Total Users</h3>
-                        <p class="text-gray-500 text-sm">1,250</p>
+                        <p class="text-gray-500 text-sm">1</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center">
@@ -45,7 +35,7 @@
                     </div>
                     <div class="ml-4">
                         <h3 class="text-lg font-bold">Revenue</h3>
-                        <p class="text-gray-500 text-sm">$45,300</p>
+                        <p class="text-gray-500 text-sm">$45</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center">
@@ -53,8 +43,8 @@
                         🚀
                     </div>
                     <div class="ml-4">
-                        <h3 class="text-lg font-bold">New Orders</h3>
-                        <p class="text-gray-500 text-sm">320</p>
+                        <h3 class="text-lg font-bold">New Users</h3>
+                        <p class="text-gray-500 text-sm">1</p>
                     </div>
                 </div>
             </div>
@@ -72,8 +62,8 @@
                         <input type="email" class="w-full p-3 border border-gray-300 rounded" placeholder="Enter email">
                     </div>
                     <div>
-                        <label class="block text-gray-700">Password</label>
-                        <input type="password" class="w-full p-3 border border-gray-300 rounded" placeholder="Enter password">
+                        <label class="block text-gray-700">Team</label>
+                        <input type="text" class="w-full p-3 border border-gray-300 rounded" placeholder="Enter team name">
                     </div>
                     <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition">Register</button>
                 </form>
@@ -107,3 +97,4 @@
     </div>
 </body>
 </html>
+<?php include 'footer.php'; ?>

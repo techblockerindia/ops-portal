@@ -14,12 +14,12 @@
 
         <!-- Quick Links -->
         <div class="footer-section">
-            <h3>Quick Links</h3>
+            <!-- <h3>Quick Links</h3>
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
+            </ul> -->
         </div>
 
         <!-- Contact Info -->
@@ -36,5 +36,3 @@
         <p>&copy; <?php echo date("Y"); ?> BLOCKER INDIA. All rights reserved.</p>
     </div>
 </footer>
-
-<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
