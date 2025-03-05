@@ -18,7 +18,6 @@
       <i class="fas fa-shopping-cart fa-2x mb-4 text-blue-600"></i>
       <h3 class="text-xl font-semibold text-gray-700 mb-2">Procurement Team</h3>
     </a>
-
     <a href="vrt.php" class="block bg-white rounded-lg shadow-lg hover:shadow-xl p-6 text-center transition hover:bg-blue-50">
       <i class="fas fa-vr-cardboard fa-2x mb-4 text-blue-600"></i>
       <h3 class="text-xl font-semibold text-gray-700 mb-2">VRT Team</h3>
