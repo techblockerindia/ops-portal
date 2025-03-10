@@ -10,7 +10,7 @@
                 <li><a href="#" class="block px-4 py-3 hover:bg-gray-600 rounded transition">Settings</a></li>
             </ul>
         </aside> -->
-
+ 
         <!-- Main Content -->
         <main class="flex-1 p-8">
             <div class="flex justify-between items-center mb-6">

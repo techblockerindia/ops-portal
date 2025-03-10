@@ -20,7 +20,7 @@ if (isset($_GET['code'])) {
     // Check if user exists in database
     $stmt = $conn->prepare("SELECT role FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
-    $stmt->execute();
+    $stmt->execute(); 
     $result = $stmt->get_result();
     $user = $result->fetch_assoc();
 

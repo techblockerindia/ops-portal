@@ -1,6 +1,8 @@
 <?php
 require 'db.php';
 
+session_start(); // Ensure the session is started
+
 if (!isset($_SESSION['user_email'])) {
     header("Location: login.php");
     exit;
@@ -28,12 +30,16 @@ $categories = [
 <section id="categories" class="container mx-auto py-16">
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Your Categories</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <?php foreach ($categories[$user_role] as $category) : ?>
-      <a href="<?= $category['url'] ?>" class="block bg-white rounded-lg shadow-lg hover:shadow-xl p-6 text-center transition hover:bg-blue-50">
-        <i class="<?= $category['icon'] ?> fa-2x mb-4 text-blue-600"></i>
-        <h3 class="text-xl font-semibold text-gray-700 mb-2"><?= $category['name'] ?></h3>
-      </a>
-    <?php endforeach; ?>
+    <?php if (isset($categories[$user_role])) : ?>
+      <?php foreach ($categories[$user_role] as $category) : ?>
+        <a href="<?= $category['url'] ?>" class="block bg-white rounded-lg shadow-lg hover:shadow-xl p-6 text-center transition hover:bg-blue-50">
+          <i class="<?= $category['icon'] ?> fa-2x mb-4 text-blue-600"></i>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2"><?= $category['name'] ?></h3>
+        </a>
+      <?php endforeach; ?>
+    <?php else : ?>
+      <p class="text-center text-gray-600">No categories available for your role.</p>
+    <?php endif; ?>
   </div>
 </section>
 

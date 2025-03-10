@@ -18,5 +18,5 @@ session_destroy();
         window.location.href = 'login.php';
     }, 10000);
     </script>
-</body>
+</body> 
 <?php include 'footer.php'; ?>
